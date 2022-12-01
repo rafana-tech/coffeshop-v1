@@ -34,7 +34,7 @@ const Banner = ({ home }) => {
                 <div className="home__desc">
                   <h1>{item.title}</h1>
                   <PortableText value={item.description} />
-                  <a href="#" className="button">
+                  <a href="#menu" className="button">
                     Check Menu
                   </a>
                 </div>

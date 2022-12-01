@@ -14,7 +14,7 @@ const OpenHour = ({ cafe }) => {
                 <span key={i}>{item}</span>
               ))}
             </div>
-            <a href="#" className="button button--book">
+            <a href="#footer" className="button button--book">
               Discover More
             </a>
           </div>

@@ -76,7 +76,7 @@ export default function Home({
           href={"https://cdn.icon-icons.com/images/icon-icons.svg"}
         />
       </Head>
-      <Header cafe={cafe} />
+      <Header cafe={cafe} social={social} />
       <main>
         <Banner home={home} />
         <Service service={service} />

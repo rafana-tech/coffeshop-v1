@@ -5,7 +5,7 @@ import { urlFor } from "../sanity";
 import { SocialIcon } from "react-social-icons";
 const Footer = ({ cafe, gallery, social }) => {
   return (
-    <footer className="footer section">
+    <footer className="footer section" id="footer">
       <div className="footer__container container">
         <div className="footer__content grid">
           <div className="footer__item">

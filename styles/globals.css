@@ -187,12 +187,9 @@ img {
 .nav__social {
   padding-top: 2rem;
   display: flex;
-  column-gap: 1rem;
+  flex-wrap: wrap;
 }
-.social__item {
-  border: 1px solid var(--white-color);
-  border-radius: 50%;
-}
+
 .social__link {
   font-size: 0.75rem;
   padding: 0.25rem;
@@ -234,7 +231,7 @@ img {
 }
 .home__data {
   position: relative;
-  height: 400px;
+  height: 100vh;
 }
 .home__data img {
   width: 100%;
@@ -863,12 +860,7 @@ img {
     font-size: unset;
     padding: 0;
   }
-  .social__item {
-    padding: 4px 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+
   .button--prev,
   .button--next {
     visibility: hidden;
@@ -923,9 +915,7 @@ img {
   .menu__images img {
     width: 100px;
   }
-  .open__images img {
-    height: auto;
-  }
+
   .experience__images {
     width: 400px;
     height: 500px;

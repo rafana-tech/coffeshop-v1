@@ -13,7 +13,7 @@ const About = ({ cafe }) => {
             <h1>ABOUT US</h1>
             <p>{cafe.welcomeTitle}</p>
             <PortableText value={cafe.aboutUs} />
-            <a href="#" className="button about--button">
+            <a href="#experience" className="button about--button">
               Find more
             </a>
           </div>

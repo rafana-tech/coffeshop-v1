@@ -1,8 +1,8 @@
 import { PortableText } from "@portabletext/react";
 import React, { useEffect, useState } from "react";
 import { urlFor } from "../sanity";
-
-const Header = ({ cafe }) => {
+import { SocialIcon } from "react-social-icons";
+const Header = ({ cafe, social }) => {
   const [changeBg, setchangeBg] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const listenScrollEvent = () => {
@@ -58,26 +58,18 @@ const Header = ({ cafe }) => {
               </li>
             </ul>
             <ul className="nav__social">
-              <li className="social__item">
-                <a href="#" className="social__link ">
-                  <i className="ri-instagram-fill"></i>
-                </a>
-              </li>
-              <li className="social__item">
-                <a href="#" className="social__link">
-                  <i className="ri-twitter-fill"></i>
-                </a>
-              </li>
-              <li className="social__item">
-                <a href="#" className="social__link">
-                  <i className="ri-facebook-fill"></i>
-                </a>
-              </li>
-              <li className="social__item">
-                <a href="#" className="social__link">
-                  <i className="ri-mail-fill"></i>
-                </a>
-              </li>
+              {social.length > 0 &&
+                social.map((item) => (
+                  <li className="social__item" key={item._id}>
+                    <a href="#" className="social__link ">
+                      <SocialIcon
+                        url={item.url}
+                        fgColor="white"
+                        bgColor="transparent"
+                      />
+                    </a>
+                  </li>
+                ))}
             </ul>
             <div
               className="nav__close"
