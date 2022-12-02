@@ -11,6 +11,12 @@ const Footer = ({ cafe, gallery, social }) => {
           <div className="footer__item">
             <h1>Address</h1>
             <PortableText value={cafe.address ?? ""} />
+            <a
+              href="https://goo.gl/maps/nuG9w712PqBoM5xm6"
+              className=" button about--button mt-3"
+            >
+              Google Maps
+            </a>
           </div>
           <div className="footer__item">
             <h1>Reservation</h1>

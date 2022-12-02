@@ -61,13 +61,11 @@ const Header = ({ cafe, social }) => {
               {social.length > 0 &&
                 social.map((item) => (
                   <li className="social__item" key={item._id}>
-                    <a href="#" className="social__link ">
-                      <SocialIcon
-                        url={item.url}
-                        fgColor="white"
-                        bgColor="transparent"
-                      />
-                    </a>
+                    <SocialIcon
+                      url={item.url}
+                      fgColor="white"
+                      bgColor="transparent"
+                    />
                   </li>
                 ))}
             </ul>
